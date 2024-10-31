@@ -1,0 +1,16 @@
+<odoo>
+    <template id="random_jobs_snippet" name="Random Jobs Snippet">
+        <section id="random-job-section" class="o_snippet">
+            <div class="o_random_jobs_snippet">
+                <h3>Job Listings</h3>
+                <div id="jobContainer"></div> <!-- This will be populated by JS -->
+            </div>
+        </section>
+    </template>
+
+    <template id="external_snippets" inherit_id="website.snippets" priority="9">
+        <xpath expr="//div[@id='snippet_effect']//t[@t-snippet][last()]" position="after">
+            <t t-snippet="as_snippet_job.random_jobs_snippet"/>
+        </xpath>
+    </template>
+</odoo>

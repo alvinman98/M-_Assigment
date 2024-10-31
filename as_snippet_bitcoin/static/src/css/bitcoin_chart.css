@@ -1,0 +1,16 @@
+#bitcoin-chart-section {
+    padding: 20px;
+    text-align: center;
+}
+
+#bitcoin-chart-section h3 {
+    color: #333;
+    font-weight: bold;
+}
+
+#bitcoinChart {
+    margin: 0 auto;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <template id="snippet_bitcoin_chart" name="Bitcoin Chart Snippet">
+        <section id="bitcoin-chart-section" class="o_snippet">
+            <div class="container">
+                <h3>Bitcoin Price (USD)</h3>
+                <canvas class="o-figure-canvas w-100 h-100" t-att-style="canvasStyle" id="bitcoinChart"></canvas>
+            </div>
+        </section>
+    </template>
+
+    <template id="external_snippets" inherit_id="website.snippets" priority="8">
+        <xpath expr="//div[@id='snippet_effect']//t[@t-snippet][last()]" position="after">
+            <t t-snippet="as_snippet_bitcoin.snippet_bitcoin_chart"/>
+        </xpath>
+    </template>
+
+</odoo>
